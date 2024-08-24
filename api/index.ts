@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import cors from "cors";
 const express = require("express");
 const app = express();
-app.use(cors);
+app.use(cors());
 app.get("/", (req, res) => res.send("NONNONON"));
 
 app.get("/instagramData", (req, res) => {
